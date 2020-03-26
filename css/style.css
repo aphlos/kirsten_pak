@@ -4958,3 +4958,8 @@ footer.dark p {
     transform: scale(1);
   }
 }
+
+.client img {
+  object-fit: cover;
+  height: 200px;
+}
