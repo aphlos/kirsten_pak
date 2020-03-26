@@ -142,7 +142,12 @@
       }
     }
 
-    $('#home-slider').flexslider(options);
+    $('#home-slider').flexslider({
+      prevText: '<i class="ti-angle-left"></i>',
+      nextText: '<i class="ti-angle-right"></i>',
+      keyboard: false,
+      controlNav: false,
+    });
 
     $('#text-rotator').flexslider({
       controlNav: false,
