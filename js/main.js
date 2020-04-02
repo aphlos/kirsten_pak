@@ -147,7 +147,7 @@
       nextText: '<i class="ti-angle-right"></i>',
       keyboard: false,
       controlNav: false,
-      slideshowSpeed: 2000,
+      slideshowSpeed: 3000,
     });
 
     $('#text-rotator').flexslider({
