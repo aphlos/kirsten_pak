@@ -484,6 +484,59 @@
     });
   }
 
+  function initPhotoGallery2 () {
+
+    var imagesArray = [];
+
+    $('.client').on('click', 'a', function(event) {
+      event.preventDefault();
+
+      var gallery = $(this).parents('.owl-carousel');
+      var galleryElements = gallery.find('.client>a');
+
+      for (var i = 0; i < galleryElements.length; i++) {
+        imagesArray.push($(galleryElements[i]).attr('href'));
+      };
+
+      var image = $(this).attr('href');
+
+      var template = '<div id="gallery-modal">';
+      template += '<div class="centrize">';
+      template += '<div class="v-center">';
+      template += '<div class="gallery-image">';
+      template += '<a href="#" id="gallery-close"><i class="ti-close"></i></a>';
+      // template += '<a href="#" class="gallery-control gallery-prev"><i class="ti-angle-left"></i></a>';
+      template += '<img src="'+imagesArray[imagesArray.indexOf(image)]+'" alt="">';
+      // template += '<a href="#" class="gallery-control gallery-next"><i class="ti-angle-right"></i></a>';
+      template += '</div>';
+      template += '</div>';
+      template += '</div>';
+      template += '</div>';
+
+      $('body').append(template);
+      $('body').addClass('modal-open');
+
+      $('#gallery-modal').fadeIn(300);
+
+    });
+
+    $('body').on('click', '#gallery-close', function(event) {
+      event.preventDefault();
+      $('#gallery-modal').fadeOut(300, function() {
+        $('#gallery-modal').remove();
+      });
+      $('body').removeClass('modal-open');
+    });
+
+    $('body').on('click', '.gallery-image', function(event) {
+      event.stopPropagation();
+    });
+
+    $('body').on('click', '#gallery-modal', function(event) {
+      $('#gallery-close').trigger('click');
+    });
+  }
+
   function initContactForm() {
 
     var requiredInputs = $('#contact-form').find('input[data-required="true"], textarea[data-required="true"]').toArray();
@@ -721,6 +774,7 @@
     initVideoBg();
     initVideoModal();
     initPhotoGallery();
+    initPhotoGallery2();
     initContactForm();
     initCounters();
     initForms();

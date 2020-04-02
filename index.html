@@ -14,12 +14,12 @@
     <meta property='og:title' content="Kirsten Pak" />
     <meta property='og:description' content="Personal Website by Kirsten Pak" />
 
-    <meta property='og:image' name="image" content="images/og_image.png" />
+    <meta property='og:image' name="image" content="images/logo/og_image.png" />
     <meta property="og:image:width" content="1466" />
     <meta property="og:image:height" content="768" />
 
-    <link rel="icon" href="images/logo_square3.png" type="image/x-icon" />
-    <link rel="shortcut icon" href="images/logo_square3.png" type="image/x-icon" />
+    <link rel="icon" href="images/logo/logo_square3.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/logo/logo_square3.png" type="image/x-icon" />
 
     <!-- Disable google translate -->
     <meta name="google" content="notranslate"/>
@@ -59,8 +59,8 @@
       <div class="container">
         <div class="logo">
           <a href="index.html">
-            <img src="images/logo_light_kirsten.png" alt="" class="logo-light">
-            <img src="images/logo_dark_kirsten.png" alt="" class="logo-dark">
+            <img src="images/logo/logo_light_kirsten.png" alt="" class="logo-light">
+            <img src="images/logo/logo_dark_kirsten.png" alt="" class="logo-dark">
           </a>
         </div>
         <div class="menu-extras">
@@ -156,7 +156,7 @@
                 History<span class="red-dot-middle"></span>
                 Horse-riding
               </p>
-              <p class="about-me-subtitle" style="padding-bottom: 20px;">
+              <p class="about-me-subtitle" style="padding-bottom: 30px;">
                 Hong Kong
               </p>
               <p class="about-me-detail">Hello! My name is Kirsten Pak.<br>This website highlights my greatest accomplishments and allows you to have a better undertanding of me as a person.</p>
@@ -180,33 +180,35 @@
         </div>
         <div class="section-content">
           <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <ul role="tablist" class="nav nav-tabs outline">
-                <li role="presentation" class="active">
+            <div class="col-md-10 col-md-offset-1">
+
+              <ul role="tablist" class="nav nav-tabs outline filters">
+                <li data-filter=".English" role="presentation" class="active">
                   <a href="#tab-1" role="tab" data-toggle="tab">English</a>
                 </li>
-                <li role="presentation">
+                <li data-filter=".Math" role="presentation">
                   <a href="#tab-2" role="tab" data-toggle="tab">Math</a>
                 </li>
-                <li role="presentation">
+                <li data-filter=".Science" role="presentation">
                   <a href="#tab-3" role="tab" data-toggle="tab">Science</a>
                 </li>
-                <li role="presentation">
+                <li data-filter=".Geography"  role="presentation">
                   <a href="#tab-4" role="tab" data-toggle="tab">Geography</a>
                 </li>
-                <li role="presentation">
+                <li data-filter=".History"  role="presentation">
                   <a href="#tab-5" role="tab" data-toggle="tab">History</a>
                 </li>
-                <li role="presentation">
+                <li data-filter=".Chinese"  role="presentation">
                   <a href="#tab-6" role="tab" data-toggle="tab">Chinese</a>
                 </li>
-                <li role="presentation">
-                  <a href="#tab-7" role="tab" data-toggle="tab">Music</a>
+                <li data-filter=".Music"  role="presentation">
+                  <a href="#tab-7" role="tab" data-toggle="tab">Music & Drama</a>
                 </li>
-                <li role="presentation">
-                  <a href="#tab-8" role="tab" data-toggle="tab">Art</a>
+                <li data-filter=".Art" role="presentation">
+                  <a href="#tab-8" role="tab" data-toggle="tab">Art & Design Technology</a>
                 </li>
               </ul>
+
               <div class="tab-content">
                 <div id="tab-1" role="tabpanel" class="tab-pane active">
                   <p>In English, we learn poetry, William Shakespeare's plays, and we end our academic year by choosing a book and analyzing the text. This way I can earn a deeper understanding of a range of different topics and learn to engage in class in different ways.</p>
@@ -215,27 +217,22 @@
                   <p>Maths is a subject where I have been taught a range of different skill sets and applied them to daily life. Currently, I have learnt pre-algebra, algebra one, and algebra two. However, my school curriculum likes to vary our content and go on a rotation between numbers, algebra, shape & space, and data.</p>
                 </div>
                 <div id="tab-3" role="tabpanel" class="tab-pane">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis porro nobis non qui, excepturi deserunt fugiat est quos vitae vero laboriosam hic quis, aliquam tempore odio sint, distinctio libero. Officia sit esse dolorum
-                    excepturi perferendis? Voluptatibus iste a illum dolorem nam odit sequi reiciendis explicabo ullam pariatur facilis eos consequatur, perspiciatis!</p>
+                  <p>Biology, Chemistry, and Physics were first introduced to my cirriculum when I entered secondary school. Since then, we have been rotating topics each year and have been tested of our knowledge by having tests at the end of each topic.</p>
                 </div>
                 <div id="tab-4" role="tabpanel" class="tab-pane">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis porro nobis non qui, excepturi deserunt fugiat est quos vitae vero laboriosam hic quis, aliquam tempore odio sint, distinctio libero. Officia sit esse dolorum
-                    excepturi perferendis? Voluptatibus iste a illum dolorem nam odit sequi reiciendis explicabo ullam pariatur facilis eos consequatur, perspiciatis!</p>
+                  <p>Geography was first introduced as a separate subject when I entered secondary school, since then we have covered topics such as tourism and climate change. Although geography is essentially embeded in history, we learn such things as contour lines that we wouldn't otherwise.</p>
                 </div>
                 <div id="tab-5" role="tabpanel" class="tab-pane">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis porro nobis non qui, excepturi deserunt fugiat est quos vitae vero laboriosam hic quis, aliquam tempore odio sint, distinctio libero. Officia sit esse dolorum
-                    excepturi perferendis? Voluptatibus iste a illum dolorem nam odit sequi reiciendis explicabo ullam pariatur facilis eos consequatur, perspiciatis!</p>
+                  <p>History at my school is very much focused on British history, as a result, I have learnt about the Industrial Revolution, Opium Wars, the Australian Convict Colony, and Slavery. However, I have much more topics in previous years, we learn to write analytical essays and look at a range of different sources to justify our point.</p>
                 </div>
                 <div id="tab-6" role="tabpanel" class="tab-pane">
                   <p>Chinese becomes mandatory in our school cirriculum when we enter into Grade 1, therefore, I have built up my Chinese skills for a long time. The regular subjects that we cover in a year are colours, clothes, travel, transport, weather, and tourism. Although we often repeat these topics every year, each year we expand our understanding in that particular area and we enhance our ability to speak and write about these topics.</p>
                 </div>
                 <div id="tab-7" role="tabpanel" class="tab-pane">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis porro nobis non qui, excepturi deserunt fugiat est quos vitae vero laboriosam hic quis, aliquam tempore odio sint, distinctio libero. Officia sit esse dolorum
-                    excepturi perferendis? Voluptatibus iste a illum dolorem nam odit sequi reiciendis explicabo ullam pariatur facilis eos consequatur, perspiciatis!</p>
+                  <p>Whilst music and drama are closely linked to one another, music was introduced to us when we entered school and drama was introduced when we entered secondary school. However, there were still many opportunities to pursue drama in prepatory school. Each year there would be audtitions for musicals such as Dr Dolittle, I have auditioned since Grade 3 when only 4 kids were allowed to participate. Furthermore, during music lessons we tend to learn new instruments and compose songs on our own.</p>
                 </div>
                 <div id="tab-8" role="tabpanel" class="tab-pane">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis porro nobis non qui, excepturi deserunt fugiat est quos vitae vero laboriosam hic quis, aliquam tempore odio sint, distinctio libero. Officia sit esse dolorum
-                    excepturi perferendis? Voluptatibus iste a illum dolorem nam odit sequi reiciendis explicabo ullam pariatur facilis eos consequatur, perspiciatis!</p>
+                  <p>Vibrant, symbolic, and meaningful. I have studied art as a subject since entering Kellett School and since then, I have covered numerous different topics. We have focused on areas such as tone, photography, sketching, and design. Moreover, Design Technology is a subject that not many schools teach, however, Kellett chooses to give this subject to students to inspire them to be more creative. In DT, I have made things such as a bluetooth speaker, jewelry, and a cup on Fusion.</p>
                 </div>
               </div>
             </div>
@@ -245,25 +242,43 @@
         <!-- end of section content-->
 
         <div class="section-content text-center">
-          <div class="col-sm-10 col-sm-offset-1">
+          <div id="academics-works" class="client-gallery col-sm-8 col-sm-offset-2">
+            
             <div data-options="{&quot;items&quot;: 4, &quot;autoplay&quot;: true, &quot;margin&quot;: 50, &quot;mdItems&quot;: 4, &quot;smItems&quot;: 3, &quot;xsItems&quot;: 3}" class="owl-carousel">
               <div class="client">
-                <img src="images/clients/1.png" alt="">
+                <a href="images/Academics/IMG_4404.JPG">
+                  <img src="images/Academics/IMG_4404.JPG" alt="">
+                </a>
               </div>
               <div class="client">
-                <img src="images/clients/2.png" alt="">
+                <a href="images/Academics/IMG_5647.JPG">
+                  <img src="images/Academics/IMG_5647.JPG" alt="">
+                </a>
               </div>
               <div class="client">
-                <img src="images/clients/3.png" alt="">
+                <a href="images/Academics/IMG_1234.JPG">
+                  <img src="images/Academics/IMG_1234.JPG" alt="">
+                </a>
               </div>
               <div class="client">
-                <img src="images/clients/4.png" alt="">
+                <a href="images/Academics/IMG_4518.JPG">
+                  <img src="images/Academics/IMG_4518.JPG" alt="">
+                </a>
               </div>
               <div class="client">
-                <img src="images/clients/5.png" alt="">
+                <a href="images/Academics/IMG_2338.JPG">
+                  <img src="images/Academics/IMG_2338.JPG" alt="">
+                </a>
               </div>
               <div class="client">
-                <img src="images/clients/6.png" alt="">
+                <a href="images/clients/5.png">
+                  <img src="images/clients/5.png" alt="">
+                </a>
+              </div>
+              <div class="client">
+                <a href="images/clients/6.png">
+                  <img src="images/clients/6.png" alt="">
+                </a>
               </div>
             </div>
           </div>
@@ -279,11 +294,11 @@
             <ul class="timeline">
               <li>
                 <div class="timeline-item">
-                  <h4>Junior Herald Newspaper</h4><span>July 2019 - <b>Present</b></span>
+                  <h4>Junior Herald</h4><span>July 2019 - <b>Present</b></span>
                 </div>
                 <div class="timeline-description">
                   <h4>Journalist</h4>
-                  <p>Quisquam eveniet reprehenderit quis recusandae voluptatem debitis corrupti hic dolorum ut commodi vero ab quasi nisi sit dolor officiis numquam, aspernatur fugiat!</p>
+                  <p>Being a journalist of the Junior Herald is </p>
                 </div>
               </li>
               <li>
@@ -292,7 +307,7 @@
                 </div>
                 <div class="timeline-description">
                   <h4>Kellett Cares Representative</h4>
-                  <p>Quisquam eveniet reprehenderit quis recusandae voluptatem debitis corrupti hic dolorum ut commodi vero ab quasi nisi sit dolor officiis numquam, aspernatur fugiat!</p>
+                  <p>Helping those in need is what being a Kellett Cares representative is all about. Kellett Cares is my school's fundraising club where we select a charity to support at the start of the year and work to raising as much money and awareness as possible. This was a good opportunity for me to help others and collaborate with people that I would normally not talk to.</p>
                 </div>
               </li>
               <li>
@@ -301,7 +316,7 @@
                 </div>
                 <div class="timeline-description">
                   <h4>Effort & Progress Award</h4>
-                  <p>Quisquam eveniet reprehenderit quis recusandae voluptatem debitis corrupti hic dolorum ut commodi vero ab quasi nisi sit dolor officiis numquam, aspernatur fugiat!</p>
+                  <p>At the end of the 2018 to 2019 academic year, I was awarded with the effort & progess award. This was a honor considering that we had approximately 50 students in my year group. The process for the nomination is when the teachers who teach the particular year group puts a name forward and others have to vote for one student. To this day, I treasure this award and am proud of what I have achieved in order to earn it.</p>
                 </div>
               </li>
               <li>
@@ -310,7 +325,7 @@
                 </div>
                 <div class="timeline-description">
                   <h4>FOBISIA Music Festival Kellett School Representative</h4>
-                  <p>Quisquam eveniet reprehenderit quis recusandae voluptatem debitis corrupti hic dolorum ut commodi vero ab quasi nisi sit dolor officiis numquam, aspernatur fugiat!</p>
+                  <p>FOBISIA Music Festival is a gargantuan concert that is the result of months of rehersal and practice. Each year, my school auditions numerous different people, however, only 8 people are accepted. It was with great privilege that I went to Singapore to represent my school, we practiced for hours each day perfecting our songs before the final concert. FOBISIA Music is an opportunity to meet other people and showcase our talents.</p>
                 </div>
               </li>
             </ul>
@@ -333,22 +348,22 @@
             <div class="col-md-8 col-md-offset-2">
               <div class="skill"><span class="skill-name">Academics</span><span class="skill-perc">95%</span>
                 <div class="progress">
-                  <div role="progressbar" data-progress="95" class="progress-bar"></div>
+                  <div role="progressbar" data-progress="95" class="progress-bar colored"></div>
                 </div>
               </div>
               <div class="skill"><span class="skill-name">Languages</span><span class="skill-perc">80%</span>
                 <div class="progress">
-                  <div role="progressbar" data-progress="80" class="progress-bar"></div>
+                  <div role="progressbar" data-progress="80" class="progress-bar colored"></div>
                 </div>
               </div>
               <div class="skill"><span class="skill-name">Sports</span><span class="skill-perc">85%</span>
                 <div class="progress">
-                  <div role="progressbar" data-progress="85" class="progress-bar"></div>
+                  <div role="progressbar" data-progress="85" class="progress-bar colored"></div>
                 </div>
               </div>
               <div class="skill"><span class="skill-name">Music</span><span class="skill-perc">95%</span>
                 <div class="progress">
-                  <div role="progressbar" data-progress="95" class="progress-bar"></div>
+                  <div role="progressbar" data-progress="95" class="progress-bar colored"></div>
                 </div>
               </div>
             </div>
@@ -397,31 +412,48 @@
         </div>
         <!-- end of section content-->
         <div class="section-content text-center">
-          <div class="col-sm-10 col-sm-offset-1">
+          <div class="client-gallery col-sm-10 col-sm-offset-1">
             <div data-options="{&quot;items&quot;: 4, &quot;autoplay&quot;: true, &quot;margin&quot;: 50, &quot;mdItems&quot;: 4, &quot;smItems&quot;: 3, &quot;xsItems&quot;: 3}" class="owl-carousel">
               <div class="client">
-                <img src="images/Football/IMG_3612.JPG" alt="">
+                <a href="images/Football/IMG_3612.JPG">
+                  <img src="images/Football/IMG_3612.JPG" alt="">
+                </a>
+                </a>
               </div>
               <div class="client">
-                <img src="images/eca2.jpg" alt="" >
+                <a href="images/Volunteering/eca2.JPG">
+                  <img src="images/Volunteering/eca2.jpg" alt="" >
+                </a>
               </div>
               <div class="client">
-                <img src="images/eca3.jpg" alt="" >
+                <a href="images/Horse Riding/eca3.JPG">
+                  <img src="images/Horse Riding/eca3.jpg" alt="" >
+                </a>
               </div>
               <div class="client">
-                <img src="images/Football/IMG_3630.JPG" alt="" >
+                <a href="images/Football/IMG_3630.JPG">
+                  <img src="images/Football/IMG_3630.JPG" alt="" >
+                </a>
               </div>
               <div class="client">
-                <img src="images/Horse Riding/IMG_1234.JPG" alt="" >
+                <a href="images/Horse Riding/IMG_1234.JPG">
+                  <img src="images/Horse Riding/IMG_1234.JPG" alt="" >
+                </a>
               </div>
               <div class="client">
-                <img src="images/Choir and Musical/IMG_8386.JPG" alt="" >
+                <a href="images/Choir and Musical/IMG_8386.JPG">
+                  <img src="images/Choir and Musical/IMG_8386.JPG" alt="" >
+                </a>
               </div>
               <div class="client">
-                <img src="images/Skiing/IMG_9899.JPG" alt="" >
+                <a href="images/Skiing/IMG_9899.JPG">
+                  <img src="images/Skiing/IMG_9899.JPG" alt="" >
+                </a>
               </div>
               <div class="client">
-                <img src="images/Wakeboarding/IMG_1600.JPG" alt="" >
+                <a href="images/Wakeboarding/IMG_1600.JPG">
+                  <img src="images/Wakeboarding/IMG_1600.JPG" alt="" >
+                </a>
               </div>
             </div>
           </div>

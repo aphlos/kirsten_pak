@@ -2182,6 +2182,12 @@ section.dark .icon-box-small.boxed {
   display: inline-block;
   margin-bottom: 25px;
 }
+
+.flexslider .slides img {
+  max-width: 130px;
+  display: block;
+  margin: 0 auto;
+}
 /*
   06
   Contact Page
@@ -3765,6 +3771,37 @@ section.dark .nav-tabs.outline > li.active > a:hover {
   -webkit-transform: scale(0);
   transform: scale(0);
 }
+
+.client > a:hover:before,
+.client > a:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+.client > a:hover:after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.client > a:after {
+  content: "\e610";
+  font-family: 'themify';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-shadow: 0 0 3px rgb(0, 0, 0);
+  margin: -25px auto 0;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
 #gallery-modal {
   position: fixed;
   top: 0;
@@ -3782,7 +3819,7 @@ section.dark .nav-tabs.outline > li.active > a:hover {
   position: relative;
 }
 .gallery-image img {
-  max-height: 600px;
+  max-height: 80vh;
 }
 #gallery-close {
   position: absolute;
