@@ -336,19 +336,6 @@
 
   function initVideoBg(){
 
-    if ($('.player').length) {
-      $('.player').mb_YTPlayer({
-        containment: '#video-wrapper',
-        autoPlay: true,
-        mute: true
-      });
-
-      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $('#video-wrapper').append('<div id="fallback-bg"></div>');
-        $('#fallback-bg').css('background-image', 'url('+$('#video-wrapper').data('fallback-bg')+')');
-      }
-    }
-
     var videoEl = $('#video-wrapper video');
 
     var setProportion = function () {
