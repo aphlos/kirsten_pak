@@ -1246,29 +1246,47 @@ section.dark .icon-box-small.boxed {
   background-color: #fff;
   position: absolute;
   -webkit-animation: preloader 1.5s infinite ease-in-out;
-  animation: preloader 1.5s infinite ease-in-out;
+      -moz-animation: preloader 1.5s infinite ease-in-out;
+       -ms-animation: preloader 1.5s infinite ease-in-out;
+        -o-animation: preloader 1.5s infinite ease-in-out;
+           animation: preloader 1.5s infinite ease-in-out;
   -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
   transform-origin: center center;
 }
 #mask span:nth-child(2) {
   left: 11px;
   -webkit-animation-delay: .2s;
-  animation-delay: .2s;
+      -moz-animation-delay: .2s;
+       -ms-animation-delay: .2s;
+        -o-animation-delay: .2s;
+           animation-delay: .2s;
 }
 #mask span:nth-child(3) {
   left: 22px;
-  -webkit-animation-delay: .4s;
-  animation-delay: .4s;
+   -webkit-animation-delay: .4s;
+      -moz-animation-delay: .4s;
+       -ms-animation-delay: .4s;
+        -o-animation-delay: .4s;
+           animation-delay: .4s;
 }
 #mask span:nth-child(4) {
   left: 33px;
-  -webkit-animation-delay: .6s;
-  animation-delay: .6s;
+    -webkit-animation-delay: .6s;
+      -moz-animation-delay: .6s;
+       -ms-animation-delay: .6s;
+        -o-animation-delay: .6s;
+           animation-delay: .6s;
 }
 #mask span:nth-child(5) {
   left: 44px;
-  -webkit-animation-delay: .8s;
-  animation-delay: .8s;
+    -webkit-animation-delay: .8s;
+      -moz-animation-delay: .8s;
+       -ms-animation-delay: .8s;
+        -o-animation-delay: .8s;
+           animation-delay: .8s;
 }
 /*
   04
