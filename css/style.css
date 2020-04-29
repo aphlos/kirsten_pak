@@ -3790,6 +3790,10 @@ section.dark .nav-tabs.outline > li.active > a:hover {
   transform: scale(0);
 }
 
+.client {
+  overflow: hidden !important;
+}
+
 .client > a:hover:before,
 .client > a:hover:after {
   opacity: 1;
