@@ -487,20 +487,42 @@
 
       var media = $(this).attr('href');
 
-      console.log("media", media);
+      console.log("media", imagesArray[imagesArray.indexOf(media)]);
 
       var template = '<div id="gallery-modal">';
-      template += '<div class="centrize">';
-      template += '<div class="v-center">';
-      template += '<div class="gallery-image">';
-      template += '<a href="#" id="gallery-close"><i class="ti-close"></i></a>';
-      // template += '<a href="#" class="gallery-control gallery-prev"><i class="ti-angle-left"></i></a>';
-      template += '<img src="'+imagesArray[imagesArray.indexOf(media)]+'" alt="">';
-      // template += '<a href="#" class="gallery-control gallery-next"><i class="ti-angle-right"></i></a>';
-      template += '</div>';
-      template += '</div>';
-      template += '</div>';
-      template += '</div>';
+
+      // if the media is image
+      if (media.match(/[^/]+(jpg|png|gif|jpeg|JPG|PNG|GIF|JPEG)$/) != null) {
+        template += '<div class="centrize">';
+        template += '<div class="v-center">';
+        template += '<div class="gallery-image">';
+        template += '<a href="#" id="gallery-close"><i class="ti-close"></i></a>';
+        // template += '<a href="#" class="gallery-control gallery-prev"><i class="ti-angle-left"></i></a>';
+        template += '<img src="'+imagesArray[imagesArray.indexOf(media)]+'" alt="">';
+        // template += '<a href="#" class="gallery-control gallery-next"><i class="ti-angle-right"></i></a>';
+        template += '</div>';
+        template += '</div>';
+        template += '</div>';
+        template += '</div>';
+      } else {
+        template += '<div class="centrize">';
+        template += '<div class="v-center">';
+        template += '<div class="gallery-image">';
+        template += '<a href="#" id="gallery-close"><i class="ti-close"></i></a>';
+        template += '<div class="fancybox-content" style="width: 1218px; height: 609px; display: inline-block;">';
+        template += '<video autoplay class="fancybox-video" controls="" controlslist="nodownload" poster="'+imagesArray[imagesArray.indexOf(media)]+'">';
+        // template += '<source src="'+imagesArray[imagesArray.indexOf(media)]+'" type="video/quicktime">Sorry, your browser doesn\'t support embedded videos, <a href="'+imagesArray[imagesArray.indexOf(media)]+'">download</a> and watch with your favorite video player!';
+        // template += '<source src="'+imagesArray[imagesArray.indexOf(media)]+'" type="video/'+ imagesArray[imagesArray.indexOf(media)].split('.')[imagesArray[imagesArray.indexOf(media)].split('.').length-1] +'">Sorry, your browser doesn\'t support embedded videos, <a href="'+imagesArray[imagesArray.indexOf(media)]+'">download</a> and watch with your favorite video player!';
+        template += '<source src="'+imagesArray[imagesArray.indexOf(media)]+'" >Sorry, your browser doesn\'t support embedded videos, <a href="'+imagesArray[imagesArray.indexOf(media)]+'">download</a> and watch with your favorite video player!';
+        template += '</video>';
+        template += '</div>';
+        template += '</div>';
+        template += '</div>';
+        template += '</div>';
+        template += '</div>';
+      }
+
+
 
       $('body').append(template);
       $('body').addClass('modal-open');

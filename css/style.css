@@ -5042,3 +5042,37 @@ footer.dark p {
   object-fit: cover;
   height: 200px;
 }
+
+.client video {
+  object-fit: cover;
+  height: 200px;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.play-icon span {
+  font-size: .8rem;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.fancybox-video,
+.fancybox-video:active {
+  outline: none;
+}
