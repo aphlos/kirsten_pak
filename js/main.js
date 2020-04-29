@@ -510,7 +510,7 @@
         template += '<div class="gallery-image">';
         template += '<a href="#" id="gallery-close"><i class="ti-close"></i></a>';
         template += '<div class="fancybox-content" style="width: 1218px; height: 609px; display: inline-block;">';
-        template += '<video autoplay class="fancybox-video" controls="" controlslist="nodownload" poster="'+imagesArray[imagesArray.indexOf(media)]+'">';
+        template += '<video autoplay playsinline class="fancybox-video" controls="" controlslist="nodownload" poster="'+imagesArray[imagesArray.indexOf(media)]+'">';
         // template += '<source src="'+imagesArray[imagesArray.indexOf(media)]+'" type="video/quicktime">Sorry, your browser doesn\'t support embedded videos, <a href="'+imagesArray[imagesArray.indexOf(media)]+'">download</a> and watch with your favorite video player!';
         // template += '<source src="'+imagesArray[imagesArray.indexOf(media)]+'" type="video/'+ imagesArray[imagesArray.indexOf(media)].split('.')[imagesArray[imagesArray.indexOf(media)].split('.').length-1] +'">Sorry, your browser doesn\'t support embedded videos, <a href="'+imagesArray[imagesArray.indexOf(media)]+'">download</a> and watch with your favorite video player!';
         template += '<source src="'+imagesArray[imagesArray.indexOf(media)]+'" >Sorry, your browser doesn\'t support embedded videos, <a href="'+imagesArray[imagesArray.indexOf(media)]+'">download</a> and watch with your favorite video player!';
