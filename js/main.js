@@ -503,7 +503,9 @@
         imagesArray.push($(galleryElements[i]).attr('href'));
       };
 
-      var image = $(this).attr('href');
+      var media = $(this).attr('href');
+
+      console.log("media", media);
 
       var template = '<div id="gallery-modal">';
       template += '<div class="centrize">';
@@ -511,7 +513,7 @@
       template += '<div class="gallery-image">';
       template += '<a href="#" id="gallery-close"><i class="ti-close"></i></a>';
       // template += '<a href="#" class="gallery-control gallery-prev"><i class="ti-angle-left"></i></a>';
-      template += '<img src="'+imagesArray[imagesArray.indexOf(image)]+'" alt="">';
+      template += '<img src="'+imagesArray[imagesArray.indexOf(media)]+'" alt="">';
       // template += '<a href="#" class="gallery-control gallery-next"><i class="ti-angle-right"></i></a>';
       template += '</div>';
       template += '</div>';
