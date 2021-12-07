@@ -3386,6 +3386,7 @@ section.parallax .countdown span {
   border-radius: 0;
   color: #191b1d;
   font-family: 'Noto Serif JP', serif;
+  padding: 10px 10px;
 }
 .nav-tabs > li > a:hover {
   background-color: transparent;
@@ -3570,6 +3571,7 @@ section.dark .nav-tabs.outline > li.active > a:hover {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.2px;
+  color: dimgray;
 }
 .author-img {
   background-image: url(../images/author_img.jpg);
