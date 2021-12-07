@@ -577,18 +577,6 @@
     $('body').on('click', '#gallery-modal', function(event) {
       $('#gallery-close').trigger('click');
     });
-
-    $(document).keyup(function(e) {
-      if (e.keyCode == 27) {
-        $('#gallery-close').trigger('click');
-      }
-      if (e.keyCode == 37) {
-        $('.gallery-control.gallery-prev').trigger('click');
-      }
-      if (e.keyCode == 39) {
-        $('.gallery-control.gallery-next').trigger('click');
-      }
-    });
   }
 
   function initContactForm() {
