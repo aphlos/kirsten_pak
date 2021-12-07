@@ -497,9 +497,9 @@
         template += '<div class="v-center">';
         template += '<div class="gallery-image">';
         template += '<a href="#" id="gallery-close"><i class="ti-close"></i></a>';
-        // template += '<a href="#" class="gallery-control gallery-prev"><i class="ti-angle-left"></i></a>';
+        template += '<a href="#" class="gallery-control gallery-prev"><i class="ti-angle-left"></i></a>';
         template += '<img src="'+imagesArray[imagesArray.indexOf(media)]+'" alt="">';
-        // template += '<a href="#" class="gallery-control gallery-next"><i class="ti-angle-right"></i></a>';
+        template += '<a href="#" class="gallery-control gallery-next"><i class="ti-angle-right"></i></a>';
         template += '</div>';
         template += '</div>';
         template += '</div>';
@@ -511,8 +511,8 @@
         template += '<a href="#" id="gallery-close"><i class="ti-close"></i></a>';
         template += '<div class="fancybox-content" style="width: 1218px; height: 609px; display: inline-block;">';
         template += '<video autoplay playsinline class="fancybox-video" controls="" controlslist="nodownload" poster="'+imagesArray[imagesArray.indexOf(media)]+'">';
-        // template += '<source src="'+imagesArray[imagesArray.indexOf(media)]+'" type="video/quicktime">Sorry, your browser doesn\'t support embedded videos, <a href="'+imagesArray[imagesArray.indexOf(media)]+'">download</a> and watch with your favorite video player!';
-        // template += '<source src="'+imagesArray[imagesArray.indexOf(media)]+'" type="video/'+ imagesArray[imagesArray.indexOf(media)].split('.')[imagesArray[imagesArray.indexOf(media)].split('.').length-1] +'">Sorry, your browser doesn\'t support embedded videos, <a href="'+imagesArray[imagesArray.indexOf(media)]+'">download</a> and watch with your favorite video player!';
+        template += '<source src="'+imagesArray[imagesArray.indexOf(media)]+'" type="video/quicktime">Sorry, your browser doesn\'t support embedded videos, <a href="'+imagesArray[imagesArray.indexOf(media)]+'">download</a> and watch with your favorite video player!';
+        template += '<source src="'+imagesArray[imagesArray.indexOf(media)]+'" type="video/'+ imagesArray[imagesArray.indexOf(media)].split('.')[imagesArray[imagesArray.indexOf(media)].split('.').length-1] +'">Sorry, your browser doesn\'t support embedded videos, <a href="'+imagesArray[imagesArray.indexOf(media)]+'">download</a> and watch with your favorite video player!';
         template += '<source src="'+imagesArray[imagesArray.indexOf(media)]+'" >Sorry, your browser doesn\'t support embedded videos, <a href="'+imagesArray[imagesArray.indexOf(media)]+'">download</a> and watch with your favorite video player!';
         template += '</video>';
         template += '</div>';
@@ -531,6 +531,37 @@
 
     });
 
+    $('body').on('click', '.gallery-control', function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      var currentImage = $('.gallery-image').find('img');
+
+      if ($(this).hasClass('gallery-next')) {
+        if (imagesArray.indexOf(currentImage.attr('src')) >= (imagesArray.length - 1)) {
+          return false;
+        }
+
+        currentImage.fadeOut(300, function() {
+          var nextImage = imagesArray[imagesArray.indexOf(currentImage.attr('src')) + 1]
+          $(currentImage).attr('src', nextImage);
+        }).fadeIn(300);
+      }
+
+      else if ($(this).hasClass('gallery-prev')) {
+        if (imagesArray.indexOf(currentImage.attr('src')) < 1) {
+          return false;
+        }
+
+        currentImage.fadeOut(300, function() {
+          var nextImage = imagesArray[imagesArray.indexOf(currentImage.attr('src')) - 1]
+          $(currentImage).attr('src', nextImage);
+        }).fadeIn(300);
+
+      }
+
+    });
+
     $('body').on('click', '#gallery-close', function(event) {
       event.preventDefault();
       $('#gallery-modal').fadeOut(300, function() {
@@ -545,6 +576,18 @@
 
     $('body').on('click', '#gallery-modal', function(event) {
       $('#gallery-close').trigger('click');
+    });
+
+    $(document).keyup(function(e) {
+      if (e.keyCode == 27) {
+        $('#gallery-close').trigger('click');
+      }
+      if (e.keyCode == 37) {
+        $('.gallery-control.gallery-prev').trigger('click');
+      }
+      if (e.keyCode == 39) {
+        $('.gallery-control.gallery-next').trigger('click');
+      }
     });
   }
 
